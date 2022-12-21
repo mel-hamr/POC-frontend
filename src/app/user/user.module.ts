@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfilePageComponent } from './profile/profile-page/profile-page.component';
-import { ProfileModule } from './profile/profile.module';
+import { ProfilePageComponent } from './profile/pages/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
-
     
   ],
   imports: [
-    ProfileModule,
     CommonModule
   ]
 })

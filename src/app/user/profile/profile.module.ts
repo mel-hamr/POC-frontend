@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { ProfileCardComponent } from './profile-card-component/profile-card/profile-card.component';
+import { RolesPageComponent } from './pages/roles-page/roles-page.component';
+import { RoleComponentComponent } from './components/roles/role-component/role-component.component';
+
+
 
 @NgModule({
-  declarations: [ProfilePageComponent, ProfileCardComponent],
+  declarations: [
+    RolesPageComponent,
+    RoleComponentComponent
+  ],
   imports: [
     CommonModule
-  ],
-  exports: [ProfilePageComponent]
+  ]
 })
 export class ProfileModule { }
