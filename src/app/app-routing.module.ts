@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './@features/home/home/home-page/home.component';
+import { ProfilePageComponent } from './@features/user/profile/pages/profile-page/profile-page.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home/home-page/home.component';
-import { ProfilePageComponent } from './user/profile/pages/profile-page/profile-page.component';
-import { pictureRoutes, UserRoutingModule } from './user/user-routing.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'picture', component: ProfilePageComponent },
+  { path: 'profile', component: ProfilePageComponent,
+    loadChildren: () =>import('./@features/user/user.module').then(m => m.UserModule)},
+
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes), UserRoutingModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

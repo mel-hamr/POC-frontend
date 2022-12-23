@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProfileCardService } from '../../components/profile/profile-card-component/services/profile.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -6,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-page.component.css']
 })
 export class ProfilePageComponent {
-
 }
