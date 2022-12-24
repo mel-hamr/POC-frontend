@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileModule } from './profile/profile.module';
+import { UserRoutingModule } from './user-routing.module';
 
 @NgModule({
   declarations: [
@@ -9,6 +10,7 @@ import { ProfileModule } from './profile/profile.module';
   imports: [
     CommonModule,
     ProfileModule,
+    UserRoutingModule
   ],
 
 })

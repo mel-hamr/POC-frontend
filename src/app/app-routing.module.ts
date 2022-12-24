@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'profile', component: ProfilePageComponent,
+  { path: 'profile',
     loadChildren: () =>import('./@features/user/user.module').then(m => m.UserModule)},
 
 ];
