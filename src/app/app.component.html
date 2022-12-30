@@ -1,9 +1,16 @@
 <div class="navBar">
+    <div class="searchBar">
+        <mat-icon class="searchIcon">search</mat-icon>
+        <input type="text" class="searchInput" placeholder="Search...">
+    </div>
     <h1 class="header">POC HEADER</h1>
     <div class="menu">
         <ul class="list">
-            <li><a routerLink="/profile">picture</a></li> 
-            <li><a routerLink="/">home</a></li> 
+            <li><a routerLink="/">Home</a></li> 
+            <li><a routerLink="/users/profile">User</a></li>
+            <li><a routerLink="/users/auth/login">Login</a></li> 
+            <li><a routerLink="/users/auth/signup">Signup</a></li> 
+
 
         </ul>
     </div>

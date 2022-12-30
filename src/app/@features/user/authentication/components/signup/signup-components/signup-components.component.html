@@ -1,0 +1,42 @@
+<form [formGroup]="signupForm" class="signupForm" (ngSubmit)="signupUser()">
+
+    <div class="field">
+        <mat-icon class="Icon">person</mat-icon>
+        <input formControlName="userName" type="text" class="Input" placeholder="User Name">
+        <span class="userNameSpan" *ngIf="userName && userName.invalid && userName.touched">
+        user Name is not valid</span>
+    </div>
+
+    <div class="field">
+        <mat-icon class="Icon">email</mat-icon>
+        <input formControlName="email" 
+        type="email" class="Input" placeholder="Email">
+        <span class="emailSpan" *ngIf="email && email.invalid  && email.touched">
+            email is not valid</span>
+    </div>
+
+    <div class="field">
+        <mat-icon class="Icon">password</mat-icon>
+        <input (ngModelChange)="checkPassword()" 
+        formControlName="password" type="password" class="Input" placeholder="Password">
+        <span class="passwordSpan" 
+        *ngIf=" (password && password.invalid && password.touched )
+            || (!passwordIsValid && password && password?.touched)">
+            password is not valid</span>
+    </div>
+
+    <div class="field">
+        <mat-icon class="Icon">security</mat-icon>
+        <input (ngModelChange)="checkPassword()"
+        formControlName="passwordConformation" type="password"
+         class="Input" placeholder="Confirm Password">
+         <span class="passwordConformationSpan" 
+         *ngIf="passwordConformation && passwordConformation.invalid
+         && passwordConformation.touched">
+            password Conformation is not valid</span>
+    </div>
+
+    <div class="signupButton">
+        <button [disabled]="signupForm.invalid" class="button" color="primary">Signup</button>
+    </div>        
+</form>

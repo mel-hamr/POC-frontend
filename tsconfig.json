@@ -17,6 +17,18 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
+    "paths" : {
+        "@profile/*" : ["src/app/@features/user/profile/*"],
+        "@user/*" : ["src/app/@features/user/*"],
+        "@home/*" : ["src/app/@features/home/*"],
+        "@features/*" : ["src/app/@features/*"],
+        "@core/*" : ["src/app/@core/*"],
+        "@shared/*" : ["src/app/@shared/*"],
+        "@api/*" : ["src/app/@api/*"],
+        "@lib/*" : ["src/app/@lib/*"],
+        "@store/*" : ["src/app/@store/*"],
+    
+    },
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": [

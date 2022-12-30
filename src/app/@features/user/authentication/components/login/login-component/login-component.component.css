@@ -1,0 +1,50 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+    border: 1px solid #0d47a1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.email , .password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.emailIcon , .passwordIcon{
+    color: #072b60;
+    margin-right: 10px;
+}
+
+.passwordInput , .emailInput{
+    outline: none;
+    border:1px solid #0d47a1;
+    border-radius: 5px;
+    padding:  6px;
+}
+
+.passwordInput:focus , .emailInput:focus{
+    border:1px solid #072b60;
+    box-shadow: 0 0 5px #072b60;
+}
+.button{
+    color: wheat;
+    font-size: 16px;
+    background-color: #0d47a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1.2em;
+    border: #072b60 1px solid;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: #072b60;
+    cursor: pointer;
+}
