@@ -1,2 +1,10 @@
 <p>home works!</p>
+<button (click)="loadAppInfo()">load info</button>
+<div >
+    <p> applicationName : {{appinfo.applicationName }} </p>
+    <p> applicationDescription : {{appinfo.applicationDescription}} </p>
+    <p> applicationVersion : {{appinfo.applicationVersion}} </p>
+    <p> applicationAuthor : {{appinfo.applicationAuthor?.lastName}} </p>
+</div>
+
 <app-section-one></app-section-one>
